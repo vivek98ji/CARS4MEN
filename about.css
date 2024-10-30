@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+u{
+    color: white;
+}
+body{
+    /* background: url(bg.jpg); */
+    background-color: black;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header nav{
+    width: 90%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu a{
+    color: whitesmoke;
+    margin-left: 30px;
+    size: 20px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color:rgb(231, 66, 44);;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+
+.texxt {
+    display: flex;
+}
+
+#aboutimg {
+    max-width: 95%;
+    margin: 100px;
+    margin-top: 30px;
+}
+
+.about_text {
+    display: flex;
+    max-width: 500px;
+    max-height: 600px;
+}
+
+.texxt h3 {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.texxt h1 {
+    color: brown;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+.social{
+    display: flex;
+}
+
+.social img{
+    margin-top: 300px;
+    margin-right: 20px;
+    width: 50px;
+}
+#contact{
+    color: white;
+    margin-top: 320px;
+
+}
+#email{
+    color: white;
+    margin-top: 320px;
+    margin-left: 220px;
+}

@@ -1,0 +1,178 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color:orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+header nav{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+header nav .logo{
+    width: 150px;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+    margin-left: 365px;
+}
+nav .menu a{
+    color: black;
+    margin-left: 30px;
+    size: 20px;
+    position: relative;
+}
+nav .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color:black;
+    transition: 0.4s;
+}
+nav .menu a:hover::after{
+    width: 100%;
+}
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+nav .social a i:hover{
+    transform: scale(1.3);
+    color: yellow;
+}
+.cars{
+    margin-top: 100px;
+}
+
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 500px;
+    color: orange;
+
+}
+
+.heading p{
+    font-weight: 300px;
+}
+
+.carcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.carcontainer .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 300px;
+    /* width: 700px; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.carcontainer .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.carcontainer .box img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.carcontainer .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: white;
+    padding: 8px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.carcontainer .box:hover h2{
+    background:orange;
+
+}
+
+.container{
+    height: 400px;
+}
+.footer{
+    background: #020102;
+    color:  white;
+    border-top: 2px solid orange;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+.ftcontainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.ftcontainer .ftbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+}
+.social img{
+    margin-right: 10px;
+    width: 50px;
+}
+
+.ftbox a{
+    color:orange;
+    margin-bottom: 10px;
+}
+
+#car4men{
+    text-align: center;
+    /* width: 40px; */
+    color: white;
+}
+#car4men span{
+    color: orange;
+}
+
+.ftbox h3{
+    margin-bottom: 20px;
+}
+
+.ftbox p{
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
